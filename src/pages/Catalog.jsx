@@ -1,10 +1,10 @@
-function ProductPage() {
+function CatalogPage() {
     return (
       <div className="h-screen flex items-center justify-center bg-gray-100 text-center">
-        Product
+        Catalog
       </div>
     );
   }
   
-  export default ProductPage;
+  export default CatalogPage;
   
