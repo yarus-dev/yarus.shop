@@ -1,0 +1,6 @@
+User-agent: * 
+Disallow: /
+Clean-Param: utm_source&utm_medium&utm_campaign 
+Clean-Param: openstat 
+Host: https://www.yarus.shop
+Sitemap: https://www.yarus.shop/sitemaps/index.xml

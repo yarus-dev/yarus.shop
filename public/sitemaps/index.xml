@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.yarus.shop/sitemaps/catalog.xml</loc>
+    <lastmod>2024-08-15</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.yarus.shop/sitemaps/produucts.xml</loc>
+    <lastmod>2024-08-15</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.yarus.shop/articles.xml</loc>
+    <lastmod>2022-06-05</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.yarus.shop/sitemaps/rest.xml</loc>
+    <lastmod>2024-08-15</lastmod>
+  </sitemap>
+</sitemapindex>
