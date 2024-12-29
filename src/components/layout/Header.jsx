@@ -1,18 +1,18 @@
-import Logo from "@/components/brand/Logo";
-import Container from "@/components/layout/Container";
-import { Input } from "@/components/ui/Input";
-import { cn } from "@/lib/utils";
+import Logo from '@/components/brand/Logo';
+import Container from '@/components/layout/Container';
+import { cn } from '@/lib/utils';
+
 const pages = [
-  { name: "Company", href: "#" },
-  { name: "Stores", href: "#" },
+  { name: 'Company', href: '#' },
+  { name: 'Stores', href: '#' },
 ];
 
-function Header({ className, children, ...props }) {
+function Header({ className, ...props }) {
   return (
     <header
       className={cn(
-        "backdrop-blur transition-colors duration-500 lg:border-b lg:border-stone-900/10 bg-white supports-backdrop-blur:bg-white/95",
-        className,
+        'backdrop-blur transition-colors duration-500 lg:border-b lg:border-stone-900/10 bg-white supports-backdrop-blur:bg-white/95',
+        className
       )}
       {...props}
     >
@@ -27,7 +27,7 @@ function Header({ className, children, ...props }) {
       </Container>
       <Container className="flex items-center justify-between py-4">
         <Logo />
-        <Input />
+        <Search />
         <CartButton />
       </Container>
     </header>

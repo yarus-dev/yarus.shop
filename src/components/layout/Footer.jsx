@@ -1,5 +1,4 @@
-import { ChevronRight, Globe } from "lucide-react";
-import React from "react";
+import { ChevronRight, Globe } from 'lucide-react';
 
 const FooterSection = ({ title, links }) => (
   <div className="flex flex-col space-y-2">
@@ -19,26 +18,26 @@ const FooterSection = ({ title, links }) => (
 const Footer = () => {
   const sections = [
     {
-      title: "Shop and Learn",
-      links: ["Store", "Mac", "iPad", "iPhone", "Watch", "Vision", "AirPods"],
+      title: 'Shop and Learn',
+      links: ['Store', 'Mac', 'iPad', 'iPhone', 'Watch', 'Vision', 'AirPods'],
     },
     {
-      title: "Services",
+      title: 'Services',
       links: [
-        "Apple Music",
-        "Apple TV+",
-        "Apple Fitness+",
-        "Apple News+",
-        "Apple Arcade",
+        'Apple Music',
+        'Apple TV+',
+        'Apple Fitness+',
+        'Apple News+',
+        'Apple Arcade',
       ],
     },
     {
-      title: "Apple Store",
-      links: ["Find a Store", "Genius Bar", "Today at Apple", "Apple Camp"],
+      title: 'Apple Store',
+      links: ['Find a Store', 'Genius Bar', 'Today at Apple', 'Apple Camp'],
     },
     {
-      title: "About Apple",
-      links: ["Newsroom", "Careers", "Investors", "Ethics & Compliance"],
+      title: 'About Apple',
+      links: ['Newsroom', 'Careers', 'Investors', 'Ethics & Compliance'],
     },
   ];
 

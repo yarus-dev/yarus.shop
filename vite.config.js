@@ -1,6 +1,6 @@
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
-import { defineConfig } from "vite";
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -8,16 +8,16 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     resolve: {
       alias: {
-        "@": resolve(__dirname, "./src/"),
+        '@': resolve(__dirname, './src/'),
       },
     },
     build: {
-      assetsDir: "_",
+      assetsDir: '_',
       rollupOptions: {
         output: {
           manualChunks: {
-            firebase: ["firebase/analytics", "firebase/app", "firebase/auth"],
-            react: ["react", "react-dom", "react-router-dom"],
+            firebase: ['firebase/analytics', 'firebase/app', 'firebase/auth'],
+            react: ['react', 'react-dom', 'react-router-dom'],
           },
         },
       },

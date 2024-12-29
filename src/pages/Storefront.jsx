@@ -1,6 +1,6 @@
-import Logo from "@/components/brand/Logo";
-import Container from "@/components/layout/Container";
-import ProductSection from "@/components/ProductSection";
+import Logo from '@/components/brand/Logo';
+import Container from '@/components/layout/Container';
+import ProductSection from '@/components/ProductSection';
 function StorefrontPage() {
   return (
     <div className="flex-1  flex items-center justify-center">
