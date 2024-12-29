@@ -1,14 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Storefront from "@/pages/Storefront";
-import Catalog from "@/pages/Catalog";
-import Product from "@/pages/Product";
-import Article from "@/pages/Article";
-import Cart from "@/pages/customer/Cart";
-import Checkout from "@/pages/customer/Checkout";
-import NotFound from "@/pages/NotFound";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import { cn } from "@/lib/utils";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Storefront from '@/pages/Storefront';
+import Catalog from '@/pages/Catalog';
+import Product from '@/pages/Product';
+import Article from '@/pages/Article';
+import Cart from '@/pages/customer/Cart';
+import Checkout from '@/pages/customer/Checkout';
+import NotFound from '@/pages/NotFound';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 const App = () => {
   return (

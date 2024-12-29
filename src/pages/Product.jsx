@@ -1,5 +1,4 @@
-import Logo from "@/components/brand/Logo";
-import Container from "@/components/layout/Container";
+import Container from '@/components/layout/Container';
 
 function ProductPage() {
   return (

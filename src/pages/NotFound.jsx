@@ -1,14 +1,11 @@
-import Logo from "@/components/brand/Logo";
-import Container from "@/components/layout/Container";
+import Container from '@/components/layout/Container';
 
 function NotFoundPage() {
   return (
     <div className="flex-1 flex items-center justify-center">
       <Container className="max-w-prose text-center text-lg px-3 py-4">
         <h1 className="text-4xl font-bold mb-4">
-          Йой!
-          <br />
-          Ця сторінка не знайдена!
+          Йой! Ця сторінка не знайдена!
           <br />
           <small>(Помилка 404)</small>
         </h1>

@@ -1,9 +1,8 @@
-import { ExpandIcon } from "lucide-react";
-import {cn} from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-function Container ({ className, children, ...props }) {
+function Container({ className, children, ...props }) {
   return (
-    <div className={cn("container mx-auto", className)} {...props}>
+    <div className={cn('container mx-auto', className)} {...props}>
       {children}
     </div>
   );

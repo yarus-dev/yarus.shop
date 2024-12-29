@@ -1,5 +1,5 @@
-import Logo from "@/components/brand/Logo";
-import Container from "@/components/layout/Container";
+import Logo from '@/components/brand/Logo';
+import Container from '@/components/layout/Container';
 
 function StorefrontPage() {
   return (
