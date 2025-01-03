@@ -1,8 +1,6 @@
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-
-// https://firebase.google.com/docs/web/setup#available-libraries
-const firebaseConfig = {
+export const firebaseConfig = {
+  // Your web app's Firebase configuration here
+  // See https://firebase.google.com/docs/web/setup#add-sdks-initialize
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
@@ -11,7 +9,3 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
-
-export const app = initializeApp(firebaseConfig);
-
-export const analytics = getAnalytics(app);

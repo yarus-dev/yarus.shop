@@ -1,8 +1,8 @@
-import { cn } from '@/lib/utils';
+import { cn } from "@/utils/styles";
 
 function Container({ className, children, ...props }) {
   return (
-    <div className={cn('container mx-auto', className)} {...props}>
+    <div className={cn("container mx-auto", className)} {...props}>
       {children}
     </div>
   );

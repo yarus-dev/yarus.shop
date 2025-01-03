@@ -1,5 +1,5 @@
-import { cn } from '@/lib/utils';
-import { Waypoints } from 'lucide-react';
+import { cn } from "@/utils/styles";
+import { Waypoints } from "lucide-react";
 
 // eslint-disable-next-line no-unused-vars
 function Logo({ className, children, ...props }) {
@@ -7,8 +7,8 @@ function Logo({ className, children, ...props }) {
     <a
       href="/"
       className={cn(
-        'text-gray-800 text-2xl inline-flex items-center text-current',
-        className
+        "text-gray-800 text-2xl inline-flex items-center text-current",
+        className,
       )}
       {...props}
     >

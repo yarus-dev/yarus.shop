@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { cn } from "@/utils/styles";
 
 export function Breadcrumbs({ Children, className }) {
   return (
@@ -17,7 +17,7 @@ Breadcrumbs.Item = BreadcrumbsItem;
 
 export function BreadcrumbsItem({ key, link, title, className, ...props }) {
   return (
-    <li key={key} className={cn('flex items-center', className)} {...props}>
+    <li key={key} className={cn("flex items-center", className)} {...props}>
       <a href={link} className="mr-2 text-sm font-medium text-gray-900">
         {title}
       </a>
