@@ -1,17 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+import defaultTheme from "tailwindcss/defaultTheme";
+
+const config = {
+  content: ["./app/**/*.{js,jsx,mdx}", "./components/**/*.{js,jsx,mdx}"],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        sans: ["var(--font-rubik)", ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [],
 };
+
+export default config;
