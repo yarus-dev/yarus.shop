@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk-UA" className="size-full">
       <body
-        className={`${rubik.variable} antialiased min-h-screen size-full relative overflow-y-scroll`}
+        className={`${rubik.variable} font-sans antialiased min-h-screen size-full relative overflow-y-scroll`}
       >
         {children}
       </body>
