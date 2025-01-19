@@ -1,6 +1,6 @@
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? `https://${process.env.HOST}`
+    ? `https://www.yarus.shop`
     : "http://localhost:3000";
 
 export default function robots() {
@@ -11,7 +11,7 @@ export default function robots() {
         disallow: "/",
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
     host: baseUrl,
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

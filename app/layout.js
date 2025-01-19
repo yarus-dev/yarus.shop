@@ -1,6 +1,8 @@
 import { Rubik } from "next/font/google";
 import "@/app/globals.css";
 
+export const dynamic = "force-dynamic";
+
 const rubik = Rubik({
   variable: "--font-rubik",
   subsets: ["latin"],
