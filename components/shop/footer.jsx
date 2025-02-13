@@ -1,16 +1,35 @@
 import { Logo } from "@/components/logo";
 import { cn } from "@/lib/styles";
+import Link from "next/link";
+
+function FooterMenu({ title, links = [] }) {
+  return (
+    <div className={cn("block")}>
+      {!!title && <h3>{title}</h3>}
+      <ul className={cn("block")}>
+        {links.map(({ title, slug }) => (
+          <li key={slug} className={cn("block")}>
+            <Link href={slug} className={cn("block")}>
+              {title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export function Footer({ className, ...props }) {
   return (
     <footer className={cn(" bg-neutral-100/50", className)}>
       <div
         className={cn(
-          "relative container mx-auto px-4 flex justify-between py-4"
+          "grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 relative container mx-auto px-4 py-4"
         )}
       >
         <Logo />
-        <div>Footer</div>
+        <FooterMenu links={[{ title: "Каталог", slug: "/catalog" }, { title: "Товар", slug: "/product" }, { title: "Брнеди", slug: "/brands" }]} />
+        <FooterMenu links={[{ title: "О нас", slug: "/article" }]} />
       </div>
       <div
         className={cn(

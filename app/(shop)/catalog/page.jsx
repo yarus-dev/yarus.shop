@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 const products = [
   {
@@ -45,58 +44,36 @@ const products = [
 ];
 
 export default async function CategoryPage({ params }) {
-  const { categories = [] } = params; // Масив категорій із URL
-  const currentCategory = categories.join(" / ") || "Головна категорія";
-
-  // Отримання даних про категорії та товари
-  const categoryData = await fetchCategoryData(categories);
 
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">Products</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
 
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
-            <a key={product.id} href={product.href} className="group">
+            <div key={product.id} className="group relative">
               <img
                 alt={product.imageAlt}
                 src={product.imageSrc}
-                className="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+                className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
               />
-              <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-              <p className="mt-1 text-lg font-medium text-gray-900">
-                {product.price}
-              </p>
-            </a>
+              <div className="mt-4 flex justify-between">
+                <div>
+                  <h3 className="text-sm text-gray-700">
+                    <a href={product.href}>
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {product.name}
+                    </a>
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                </div>
+                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
     </div>
-  );
-}
-
-// Імітація API виклику
-async function fetchCategoryData(categories) {
-  // Замість цього підключіть реальну базу даних чи API
-  return {
-    subcategories: [
-      { slug: "smartphones", name: "Смартфони" },
-      { slug: "laptops", name: "Ноутбуки" },
-    ],
-    products: [
-      {
-        slug: "iphone-14",
-        name: "iPhone 14",
-        price: "$999",
-        image: "https://via.placeholder.com/300x200?text=Product+Image",
-      },
-      {
-        slug: "macbook-pro",
-        name: "MacBook Pro",
-        price: "$1999",
-        image: "https://via.placeholder.com/300x200?text=Product+Image",
-      },
-    ],
-  };
+  )
 }
